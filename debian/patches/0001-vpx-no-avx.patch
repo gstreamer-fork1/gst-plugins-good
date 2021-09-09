@@ -1,0 +1,13 @@
+diff --git a/ext/vpx/meson.build b/ext/vpx/meson.build
+index 143851354..fcfd443fd 100644
+--- a/ext/vpx/meson.build
++++ b/ext/vpx/meson.build
+@@ -17,7 +17,7 @@ vpx_features = [
+ ]
+ 
+ vpx_option = get_option('vpx')
+-vpx_dep = dependency('vpx-avx', version : '>=1.5.0', required : vpx_option)
++vpx_dep = dependency('vpx', version : '>=1.5.0', required : vpx_option)
+ 
+ if vpx_dep.found()
+   vpx_args = ['-DHAVE_VPX_1_3']
