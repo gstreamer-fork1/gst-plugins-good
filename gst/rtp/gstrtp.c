@@ -167,11 +167,11 @@ plugin_init (GstPlugin * plugin)
   if (!gst_rtp_ilbc_depay_plugin_init (plugin))
     return FALSE;
 
-  if (!gst_rtp_g722_depay_plugin_init (plugin))
-    return FALSE;
+//  if (!gst_rtp_g722_depay_plugin_init (plugin))
+//    return FALSE;
 
-  if (!gst_rtp_g722_pay_plugin_init (plugin))
-    return FALSE;
+//  if (!gst_rtp_g722_pay_plugin_init (plugin))
+//    return FALSE;
 
   if (!gst_rtp_g723_depay_plugin_init (plugin))
     return FALSE;
