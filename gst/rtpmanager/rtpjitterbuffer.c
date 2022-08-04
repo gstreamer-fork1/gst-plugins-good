@@ -27,8 +27,9 @@
 GST_DEBUG_CATEGORY_STATIC (rtp_jitter_buffer_debug);
 #define GST_CAT_DEFAULT rtp_jitter_buffer_debug
 
+// SSKY: WAS 2 * GST_SECOND
 #define MAX_WINDOW	RTP_JITTER_BUFFER_MAX_WINDOW
-#define MAX_TIME	(2 * GST_SECOND)
+#define MAX_TIME	(60 * GST_MSECOND)
 
 /* signals and args */
 enum
